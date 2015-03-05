@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="253b0ab3-e931-4b82-90fb-b45cdba3b49f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProblemSolving/Burchfield_Beau_ProblemSolving.docx" afterPath="$PROJECT_DIR$/ProblemSolving/Burchfield_Beau_ProblemSolving.docx" />
-    </list>
+    <list default="true" id="253b0ab3-e931-4b82-90fb-b45cdba3b49f" name="Default" comment="" />
     <ignored path="Burchfield_Beau_WPF.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -232,7 +230,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="63" width="1400" height="833" extended-state="1" />
+    <frame x="40" y="63" width="1400" height="833" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
