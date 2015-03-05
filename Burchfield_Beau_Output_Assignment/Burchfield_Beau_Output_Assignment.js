@@ -22,6 +22,7 @@ myOccupation = "Inventor";
 siblingNumber = 5;
 goneAbroad = false;
 
+//Outputting variable values
 console.log("My name is Beau Burchfield. I am an" + myOccupation + " with a company called Global Extreme Mobility.");
 console.log("I have" + siblingNumber + "brothers and sisters.");
 console.log("It is" + goneAbroad + "that I have been somewhere out of this country.");
