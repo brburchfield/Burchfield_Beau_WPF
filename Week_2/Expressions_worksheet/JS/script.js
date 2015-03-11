@@ -7,11 +7,19 @@
 
 // Dog Years
 
-//TODO: Define variables.
+//Declaring variable and constant
+var  sparkysAge;
+const  dogYears =7;
 
-//TODO: Create Calculation.
+//Assigning value to variable
+sparkysAge = 9;
 
-//TODO: Create Output.
+//Creating calculation (Sparky's age multiplied by dog years' value) and assigning to sparkysDogAge variable.
+var sparkysDogAge = sparkysAge * dogYears;
+
+
+//print out the output of Sparky's age in dog years (sparkysDogAge) to console.
+console.log ("Sparky's age in dog years is " + sparkysDogAge + ".");
 
 
 
