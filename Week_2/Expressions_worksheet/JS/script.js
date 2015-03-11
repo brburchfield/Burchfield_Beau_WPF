@@ -5,7 +5,7 @@
  */
 
 
-// Dog Years
+// ~~~Dog Years~~~
 
 //Declaring variable and constant
 var  sparkysAge;
@@ -19,19 +19,42 @@ var sparkysDogAge = sparkysAge * dogYears;
 
 
 //print out the output of Sparky's age in dog years (sparkysDogAge) to console.
-console.log ("Sparky's age in dog years is " + sparkysDogAge + ".");
+console.log ("Sparky is " + sparkysAge + " human years old which is " + sparkysDogAge + " in dog years.");
 
 
 
 
 
-// Slice of Pie, Pt. 1
 
-//TODO: Define variables.
 
-//TODO: Create Calculation.
 
-//TODO: Create Output.
+
+
+// ~~~Slice of Pie, Pt. 1~~~
+
+//Declaring variables
+
+//Number of slices per pizza
+var pizzaSlice = 8;
+//Number of people at the party
+var partyPeople = 19;
+//Number of pizzas ordered.
+var pizzasOrdered = 3;
+var slicesTotal;
+
+//Creating calculation for total number of pizza slices (number of slices per pizza times the number of pizzas)
+slicesTotal = pizzaSlice * pizzasOrdered;
+
+//Creating calculation for how many slices per person () and assigning slicePerPerson variable.
+var slicePerPerson = slicesTotal / partyPeople;
+
+//print out the output of total slices per person (slicePerPerson) to console.
+console.log("Each person ate " + slicePerPerson + " slices of pizza at the party.");
+
+
+
+
+
 
 
 
@@ -49,6 +72,11 @@ console.log ("Sparky's age in dog years is " + sparkysDogAge + ".");
 
 
 
+
+
+
+
+
 // Average Shopping Bill
 
 //TODO: Define variables.
@@ -56,6 +84,11 @@ console.log ("Sparky's age in dog years is " + sparkysDogAge + ".");
 //TODO: Create Calculation.
 
 //TODO: Create Output.
+
+
+
+
+
 
 
 
