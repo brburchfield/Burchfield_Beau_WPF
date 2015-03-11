@@ -62,11 +62,14 @@ console.log("Each person ate " + slicePerPerson + " slices of pizza at the party
 
 // Slice of Pie, Pt. 2
 
-//TODO: Define variables.
+//Creating calculation for how many slices left over (slicesLeft) for Sparky
+var slicesLeft = slicesTotal % partyPeople;
 
-//TODO: Create Calculation.
+//print out the output of total slices left over (slicesLeft) for Sparky
+console.log("Sparky got " + slicesLeft + " slices of pizza at the party.");
 
-//TODO: Create Output.
+
+
 
 
 
