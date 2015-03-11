@@ -106,8 +106,27 @@ console.log("You have spent a total of $" + overallTotal + " on groceries over 5
 
 // Discounts
 
-//TODO: Define variables.
+//Declaring variables and assigning values.
 
-//TODO: Create Calculation.
+//Original price
+var originalPrice =17.99;
+//Discount percentage
+var discountPercent = 15;
+//Description of item
+var itemName = "Tardis replica";
+//Sales tax percentage
+var salesTax = 9;
 
-//TODO: Create Output.
+
+//Calculate discounted price of item and assign priceWithDiscount variable
+var priceBeforeTax = originalPrice - (originalPrice * (discountPercent / 100));
+
+//Calculate sum of discountedPrice before tax and salesTax percentage (salesTax / 100) and assign priceAfterTax variable
+var priceAfterTax = priceBeforeTax + (priceBeforeTax * (salesTax / 100));
+
+/*
+print out the output of description of item (itemName), discount percentage (discountPercent), discounted price
+before tax (priceBeforeTax), and discounted price after tax (priceAfterTax).
+*/
+console.log("Your " + itemName + " was originally $" + originalPrice + ", but after a " + discountPercent +
+"% discount, it is now $" + priceBeforeTax + " without tax, and $" + priceAfterTax + " with tax.");
