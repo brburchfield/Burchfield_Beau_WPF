@@ -60,7 +60,7 @@ console.log("Each person ate " + slicePerPerson + " slices of pizza at the party
 
 
 
-// Slice of Pie, Pt. 2
+// ~~~Slice of Pie, Pt. 2~~~
 
 //Creating calculation for how many slices left over (slicesLeft) for Sparky
 var slicesLeft = slicesTotal % partyPeople;
@@ -80,7 +80,7 @@ console.log("Sparky got " + slicesLeft + " slices of pizza at the party.");
 
 
 
-// Average Shopping Bill
+// ~~~Average Shopping Bill~~~
 
 //Create variable array
 var totals = [117.92, 96.44, 115.05, 102.28, 83.90];
@@ -104,7 +104,7 @@ console.log("You have spent a total of $" + overallTotal + " on groceries over 5
 
 
 
-// Discounts
+// ~~~Discounts~~~
 
 //Declaring variables and assigning values.
 
