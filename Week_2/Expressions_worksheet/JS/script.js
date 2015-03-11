@@ -82,11 +82,18 @@ console.log("Sparky got " + slicesLeft + " slices of pizza at the party.");
 
 // Average Shopping Bill
 
-//TODO: Define variables.
+//Create variable array
+var totals = [117.92, 96.44, 115.05, 102.28, 83.90];
 
-//TODO: Create Calculation.
+// Calculate sum of variables in array
+var overallTotal = (totals[0] + totals[1] + totals[2] + totals[3] + totals[4]);
 
-//TODO: Create Output.
+//Calculate average of variables in array (overallTotal / 5) and assign  averageCost variable
+var averageCost = overallTotal / 5;
+
+//print out the output of the total cost (overallTotal) and the average value (averageCost) of grocery bills
+console.log("You have spent a total of $" + overallTotal + " on groceries over 5 weeks." +
+" That is an average of $" + averageCost + " per week.");
 
 
 
