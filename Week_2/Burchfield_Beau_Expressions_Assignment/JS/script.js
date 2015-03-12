@@ -42,5 +42,6 @@ var totalExtra = incomeYear - billsYear;
 if( charityBoolean == true ) {totalExtra = totalExtra - charityYear }
 
 //Print total extra funds to console.
-
+console.log("Total extra funds are $" + totalExtra + ".")
 //Display totalExtra to user.
+alert("You have $" + totalExtra + " total extra funds!")
