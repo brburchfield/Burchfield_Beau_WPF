@@ -34,11 +34,12 @@ if( charityBoolean == true ) {charityYear = prompt("Please enter average yearly 
 
 
 //Convert weekly income to yearly. Assign result to variable.
-
+var incomeYear = weeklyIncome * 52;
 //Convert monthly bills to yearly. Assign result to variable.
-
+var billsYear = monthlyBills * 12;
 //Calculate yearly income, minus yearly bills and donations. Assign result to variable.
-
+var totalExtra = incomeYear - billsYear;
+if( charityBoolean == true ) {totalExtra = totalExtra - charityYear }
 
 //Print total extra funds to console.
 
