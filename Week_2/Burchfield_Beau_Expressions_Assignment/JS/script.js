@@ -30,7 +30,7 @@ monthlyBills = prompt("Please enter your monthly total bills (including gas, gro
 charityBoolean = confirm("Do you donate any money to charity?");
 
 //If yes, prompt for yearly donation amount.
-
+if( charityBoolean == true ) {charityYear = prompt("Please enter average yearly charity donations.")}
 
 
 //Convert weekly income to yearly. Assign result to variable.
