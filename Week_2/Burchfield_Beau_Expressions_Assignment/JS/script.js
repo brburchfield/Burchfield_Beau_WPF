@@ -14,6 +14,15 @@ var monthlyBills;
 var charityYear;
 //Declare extra funds variable.
 var totalExtra;
+//Declare yearly income.
+var incomeYear;
+//Declare yearly bills.
+var billsYear;
+//Declare charity boolean.
+var charityBoolean;
+//Declare vacation fund,
+var vacaFund;
+
 
 
 
@@ -26,6 +35,8 @@ alert("Hello! Let's calculate your extra funds!");
 weeklyIncome = prompt("Please enter your net weekly income.");
 //Request monthly bills.
 monthlyBills = prompt("Please enter your monthly total bills (including gas, groceries, etc).");
+//Request yearly vacation fund.
+vacaFund = prompt("Please enter amount planned to spend on vacation per year (value can be set to 0).");
 //Inquire as to whether user donates money to charity.
 charityBoolean = confirm("Do you donate any money to charity?");
 
@@ -34,14 +45,14 @@ if( charityBoolean == true ) {charityYear = prompt("Please enter average yearly 
 
 
 //Convert weekly income to yearly. Assign result to variable.
-var incomeYear = weeklyIncome * 52;
+incomeYear = weeklyIncome * 52;
 //Convert monthly bills to yearly. Assign result to variable.
-var billsYear = monthlyBills * 12;
+billsYear = monthlyBills * 12;
 //Calculate yearly income, minus yearly bills and donations. Assign result to variable.
-var totalExtra = incomeYear - billsYear;
+totalExtra = incomeYear - billsYear - vacaFund;
 if( charityBoolean == true ) {totalExtra = totalExtra - charityYear }
 
 //Print total extra funds to console.
-console.log("Total extra funds are $" + totalExtra + ".")
+console.log("Total extra funds are $" + totalExtra + ".");
 //Display totalExtra to user.
-alert("You have $" + totalExtra + " total extra funds!")
+alert("You have $" + totalExtra + " total extra funds!");
