@@ -20,13 +20,14 @@ var totalExtra;
 
 
 //Create original welcome string.
-
+alert("Hello! Let's calculate your extra funds!");
 
 //Request weekly income.
-
+weeklyIncome = prompt("Please enter your net weekly income.");
 //Request monthly bills.
-
+monthlyBills = prompt("Please enter your monthly total bills (including gas, groceries, etc).");
 //Inquire as to whether user donates money to charity.
+charityBoolean = confirm("Do you donate any money to charity?");
 
 //If yes, prompt for yearly donation amount.
 
