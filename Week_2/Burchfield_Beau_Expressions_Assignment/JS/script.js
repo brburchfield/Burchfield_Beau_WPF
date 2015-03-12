@@ -7,13 +7,13 @@ Expressions Assignment
 //Extra Funds Calculator
 
 //Declare weekly income.
-
+var weeklyIncome;
 //Declare monthly bills variable.
-
+var monthlyBills;
 //Declare yearly donations variable.
-
+var charityYear;
 //Declare extra funds variable.
-
+var totalExtra;
 
 
 
