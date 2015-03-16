@@ -26,7 +26,7 @@ var maxMileage;
 //Prompt for gas efficiency
 gasEfficiency = prompt("What is your vehicle's average fuel efficiency (in mpg)?");
 //Prompt for reading of gas tank
-gaugeReading = prompt("What is the current reading of your fuel guage (in %)? \nExample: .90 = 90%.");
+gaugeReading = prompt("What is the current reading of your fuel guage (in %)? \nExample: 0.90 = 90%.");
 //Prompt for tank capacity
 tankCapacity = prompt("What is your gas tank capacity (in gallons)?");
 
@@ -36,3 +36,12 @@ tankCapacity = prompt("What is your gas tank capacity (in gallons)?");
 totalGas = tankCapacity * gaugeReading;
 //Calculating maximum mileage
 maxMileage = totalGas * gasEfficiency;
+
+
+//Create if, else statement for output
+
+if(maxMileage >= 200) {
+    console.log("Yes, you can make it without stopping for gas!");
+} else {
+    console.log("You only have " + totalGas + " gallons of gas in your tank, better get gas now while you can!");
+}
