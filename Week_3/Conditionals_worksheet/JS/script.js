@@ -102,3 +102,14 @@ var pressureRD;
 //Rear, Passenger's Side Tire
 var pressureRP;
 
+//--Assigning values to variables--
+
+//Prompt for Front, Driver's Side Tire pressure
+pressureFD = prompt("Enter the pressure of your Front, Driver's Side Tire (in psi).");
+//Prompt for Front, Passenger's Side Tire pressure
+pressureFP = prompt("Enter the pressure of your Front, Passenger's Side Tire (in psi).");
+//Prompt for Rear, Driver's Side Tire pressure
+pressureRD = prompt("Enter the pressure of your Rear, Driver's Side Tire (in psi).");
+//Prompt for Rear, Passenger's Side Tire pressure
+pressureRP = prompt("Enter the pressure of your Rear, Passenger's Side Tire (in psi).");
+
