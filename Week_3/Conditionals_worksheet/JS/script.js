@@ -45,3 +45,20 @@ if(maxMileage >= 200) {
 } else {
     console.log("You only have " + totalGas + " gallons of gas in your tank, better get gas now while you can!");
 }
+
+
+
+
+
+//~~~Check The Login~~~
+
+//--Declaring Variables--
+
+//Username entered by user
+var userName;
+//Password entered by user
+var passWord;
+//Correct userName;
+var goodUser;
+//Correct Password;
+var goodPassword;
