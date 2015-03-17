@@ -38,7 +38,7 @@ totalGas = tankCapacity * gaugeReading;
 maxMileage = totalGas * gasEfficiency;
 
 
-//Create if, else statement for output
+//Creating if, else statement for output
 
 if(maxMileage >= 200) {
     console.log("Yes, you can make it without stopping for gas!");
@@ -67,11 +67,20 @@ var goodPassword;
 //--Assigning values to variables--
 
 //Prompt for username
-userName = ("Please enter your username.");
+userName = prompt("Please enter your username.");
 //Prompt for password
-passWord = ("Please enter your password.");
+passWord = prompt("Please enter your password.");
 //Correct username
-goodUser = "llewis@test.com";
+goodUser = "llewis";
 //Correct password
 goodPassword = "FS_SDI";
 
+//--Creating if, else if, else statement--
+
+if(userName == goodUser && passWord == goodPassword){
+    console.log("Welcome, " + userName + "!");
+} else if(userName == goodUser && passWord !== goodPassword){
+    console.log("Password does not match our records.");
+} else {
+    console.log("User not found. Try again.");
+}
