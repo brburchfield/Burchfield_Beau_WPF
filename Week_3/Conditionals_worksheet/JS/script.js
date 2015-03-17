@@ -84,3 +84,21 @@ if(userName == goodUser && passWord == goodPassword){
 } else {
     console.log("User not found. Try again.");
 }
+
+
+
+
+
+//~~~Tire Pressure I~~~
+
+//--Declaring Variables--
+
+//Front, Driver's Side Tire
+var pressureFD;
+//Front, Passenger's Side Tire
+var pressureFP;
+//Rear, Driver's Side Tire
+var pressureRD;
+//Rear, Passenger's Side Tire
+var pressureRP;
+
