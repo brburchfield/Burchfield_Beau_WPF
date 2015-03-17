@@ -52,6 +52,7 @@ if(maxMileage >= 200) {
 
 //~~~Check The Login~~~
 
+
 //--Declaring Variables--
 
 //Username entered by user
@@ -62,3 +63,15 @@ var passWord;
 var goodUser;
 //Correct Password;
 var goodPassword;
+
+//--Assigning values to variables--
+
+//Prompt for username
+userName = ("Please enter your username.");
+//Prompt for password
+passWord = ("Please enter your password.");
+//Correct username
+goodUser = "llewis@test.com";
+//Correct password
+goodPassword = "FS_SDI";
+
