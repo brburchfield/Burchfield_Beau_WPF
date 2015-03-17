@@ -93,23 +93,13 @@ if(userName == goodUser && passWord == goodPassword){
 
 //--Declaring Variables--
 
-//Front, Driver's Side Tire
-var pressureFD;
-//Front, Passenger's Side Tire
-var pressureFP;
-//Rear, Driver's Side Tire
-var pressureRD;
-//Rear, Passenger's Side Tire
-var pressureRP;
+//Tire Pressures
+var pressures = [35, 34, 40, 40];
 
-//--Assigning values to variables--
+//--Creating if, else statement--
 
-//Prompt for Front, Driver's Side Tire pressure
-pressureFD = prompt("Enter the pressure of your Front, Driver's Side Tire (in psi).");
-//Prompt for Front, Passenger's Side Tire pressure
-pressureFP = prompt("Enter the pressure of your Front, Passenger's Side Tire (in psi).");
-//Prompt for Rear, Driver's Side Tire pressure
-pressureRD = prompt("Enter the pressure of your Rear, Driver's Side Tire (in psi).");
-//Prompt for Rear, Passenger's Side Tire pressure
-pressureRP = prompt("Enter the pressure of your Rear, Passenger's Side Tire (in psi).");
-
+if(pressures[0] == pressures[1] && pressures[2] == pressures[3]){
+    console.log("The tires pass spec!");
+}else {
+    console.log("Get your tires checked out!");
+}
