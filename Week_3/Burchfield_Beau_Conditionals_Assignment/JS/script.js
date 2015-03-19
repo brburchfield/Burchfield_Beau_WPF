@@ -50,14 +50,35 @@ if(guestNumber > 5){
 userCost = prompt("Alright. How much did your meal cost?");
 
 //Cast string inputs to numbers.
-userCost   = Number(userCost);
+userCost   =   Number(userCost);
 guest1Cost = Number(guest1Cost);
 guest2Cost = Number(guest2Cost);
 guest3Cost = Number(guest3Cost);
 guest4Cost = Number(guest4Cost);
 guest5Cost = Number(guest5Cost);
 
+//Validating numbers. Removing if incorrect.
+if(isNaN(guest1Cost)){
+    guest1Cost = 0;
+}
+if(isNaN(guest2Cost)){
+    guest2Cost = 0;
+}
+if(isNaN(guest3Cost)){
+    guest3Cost = 0;
+}
+if(isNaN(guest4Cost)){
+    guest4Cost = 0;
+}
+if(isNaN(guest5Cost)){
+    guest5Cost = 0;
+}
+if(isNaN(userCost)){
+    userCost = 0;
+}
 
+
+console.log(guest1Cost);
 //TODO: Create calculations.
 
 
