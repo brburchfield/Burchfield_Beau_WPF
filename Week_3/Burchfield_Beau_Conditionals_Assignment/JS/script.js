@@ -13,6 +13,8 @@ var guest2Cost;
 var guest3Cost;
 var guest4Cost;
 var guest5Cost;
+var beverages;
+var beverageCost;
 
 //Assign values to variables (via prompts).
 guestNumber = prompt("How many guests do you have?", "Maximum is 5.");
@@ -60,25 +62,46 @@ guest5Cost = Number(guest5Cost);
 //Validating numbers. Removing if incorrect.
 if(isNaN(guest1Cost)){
     guest1Cost = 0;
+    alert("I didn't understand your answer for your first guest's cost. If it was more than zero, please reload this" +
+    " page. If not, you're fine!")
 }
 if(isNaN(guest2Cost)){
     guest2Cost = 0;
+    alert("I didn't understand your answer for your second guest's cost. If it was more than zero, please reload this" +
+    " page. If not, you're fine!")
 }
 if(isNaN(guest3Cost)){
     guest3Cost = 0;
+    alert("I didn't understand your answer for your third guest's cost. If it was more than zero, please reload this" +
+    " page. If not, you're fine!")
 }
 if(isNaN(guest4Cost)){
     guest4Cost = 0;
+    alert("I didn't understand your answer for your forth guest's cost. If it was more than zero, please reload this" +
+    " page. If not, you're fine!")
 }
 if(isNaN(guest5Cost)){
     guest5Cost = 0;
+    alert("I didn't understand your answer for your fifth guest's cost. If it was more than zero, please reload this" +
+    " page. If not, you're fine!")
 }
 if(isNaN(userCost)){
     userCost = 0;
+    alert("I didn't understand your answer for your meal's cost. If it was more than zero, please reload this" +
+    " page. If not, you're fine!")
 }
 
+//Prompt boolean.
+beverages = confirm("Did your party purchase alcoholic beverages? Click Ok for yes, Cancel for no.");
 
-console.log(guest1Cost);
+//Create ternary to prompt for variable.
+(beverages) ? beverageCost = prompt("How much is the cost of your party's beverages?", "Enter as a decimal." +
+" (i.e. 19.20 = $19.20)") : alert("That's great! That stuff is expensive!");
+//Validate ternary result.
+if(isNaN(beverageCost)){
+    beverageCost = prompt("I didn't understand the cost of beverages. Please enter it again", "Enter as a decimal.")
+}
+
 //TODO: Create calculations.
 
 
