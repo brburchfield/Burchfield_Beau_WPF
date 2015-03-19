@@ -121,8 +121,8 @@ tipCost = (totalCost * .15);
 //Add totalCost and tipCost to make fullPrice variable.
 fullPrice = (totalCost + tipCost);
 
+//Output results.
 
-
-
-
-
+console.log("The total cost of the meal is $" + totalCost + ".");
+console.log("A 15% tip would be $" + tipCost + ".");
+console.log("The full cost of the meal, with tip, is $" + fullPrice + ".");
