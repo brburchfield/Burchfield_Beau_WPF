@@ -15,6 +15,9 @@ var guest4Cost;
 var guest5Cost;
 var beverages;
 var beverageCost;
+var totalCost;
+var tipCost;
+var fullPrice;
 
 //Assign values to variables (via prompts).
 guestNumber = prompt("How many guests do you have?", "Maximum is 5.");
@@ -97,12 +100,26 @@ beverages = confirm("Did your party purchase alcoholic beverages? Click Ok for y
 //Create ternary to prompt for variable.
 (beverages) ? beverageCost = prompt("How much is the cost of your party's beverages?", "Enter as a decimal." +
 " (i.e. 19.20 = $19.20)") : alert("That's great! That stuff is expensive!");
+
 //Validate ternary result.
+beverageCost = Number(beverageCost);
 if(isNaN(beverageCost)){
-    beverageCost = prompt("I didn't understand the cost of beverages. Please enter it again", "Enter as a decimal.")
+    beverageCost = 0;
 }
 
-//TODO: Create calculations.
+//Create calculations.
+
+//Calculate total cost
+totalCost = (userCost + guest1Cost + guest2Cost + guest3Cost + guest4Cost + guest5Cost);
+//If beverages are not equal to zero, add to totalCost. [Done this way to add "!" logical operator.
+if(beverageCost !== 0){
+    totalCost = (totalCost + beverageCost);
+}
+//Make tip fifteen percent of check.
+tipCost = (totalCost * .15);
+
+//Add totalCost and tipCost to make fullPrice variable.
+fullPrice = (totalCost + tipCost);
 
 
 
