@@ -19,8 +19,9 @@ var totalCost;
 var tipCost;
 var fullPrice;
 
+
 //Assign values to variables (via prompts).
-guestNumber = prompt("How many guests do you have?", "Maximum is 5.");
+guestNumber = prompt("You're on your way to a special dinner! How many guests do you have?", "Maximum is 5.");
 //Cast string input to number.
 guestNumber = Number(guestNumber);
 
@@ -65,33 +66,21 @@ guest5Cost = Number(guest5Cost);
 //Validating numbers. Removing if incorrect.
 if(isNaN(guest1Cost)){
     guest1Cost = 0;
-    alert("I didn't understand your answer for your first guest's cost. If it was more than zero, please reload this" +
-    " page. If not, you're fine!")
 }
 if(isNaN(guest2Cost)){
     guest2Cost = 0;
-    alert("I didn't understand your answer for your second guest's cost. If it was more than zero, please reload this" +
-    " page. If not, you're fine!")
 }
 if(isNaN(guest3Cost)){
     guest3Cost = 0;
-    alert("I didn't understand your answer for your third guest's cost. If it was more than zero, please reload this" +
-    " page. If not, you're fine!")
 }
 if(isNaN(guest4Cost)){
     guest4Cost = 0;
-    alert("I didn't understand your answer for your forth guest's cost. If it was more than zero, please reload this" +
-    " page. If not, you're fine!")
 }
 if(isNaN(guest5Cost)){
-    guest5Cost = 0;
-    alert("I didn't understand your answer for your fifth guest's cost. If it was more than zero, please reload this" +
-    " page. If not, you're fine!")
+    guest5Cost =0;
 }
 if(isNaN(userCost)){
     userCost = 0;
-    alert("I didn't understand your answer for your meal's cost. If it was more than zero, please reload this" +
-    " page. If not, you're fine!")
 }
 
 //Prompt boolean.
@@ -111,7 +100,7 @@ if(isNaN(beverageCost)){
 
 //Calculate total cost
 totalCost = (userCost + guest1Cost + guest2Cost + guest3Cost + guest4Cost + guest5Cost);
-//If beverages are not equal to zero, add to totalCost. [Done this way to add "!" logical operator.
+//If beverages are not equal to zero, add to totalCost. [Done this way to add "!" logical operator.]
 if(beverageCost !== 0){
     totalCost = (totalCost + beverageCost);
 }
