@@ -6,25 +6,39 @@ Conditionals Assignment
 
 
 //Declare variables (including array).
+//user's cost for meal
 var userCost;
+//how many guests user has
 var guestNumber;
+//guest number 1's cost of meal
 var guest1Cost;
+//guest number 2's cost of meal
 var guest2Cost;
+//guest number 3's cost of meal
 var guest3Cost;
+//guest number 4's cost of meal
 var guest4Cost;
+//guest number 5's cost of meal
 var guest5Cost;
+//beverages boolean
 var beverages;
+//cost of beverages
 var beverageCost;
+//total cost of meals, before tip
 var totalCost;
+//cost of tip
 var tipCost;
+//cost of meal, with tip
 var fullPrice;
 
 
 //Assign values to variables (via prompts).
 guestNumber = prompt("You're on your way to a special dinner! How many guests do you have?", "Maximum is 5.");
+
 //Cast string input to number.
 guestNumber = Number(guestNumber);
 
+//begin if statements to determine how many guests to ask about.
 if(guestNumber > 5){
 //For if the user types a number over the maximum amount (5).
     alert("The maximum amount of guests you may enter is 5. Please reload the page.");
@@ -90,8 +104,10 @@ beverages = confirm("Did your party purchase alcoholic beverages? Click Ok for y
 (beverages) ? beverageCost = prompt("How much is the cost of your party's beverages?", "Enter as a decimal." +
 " (i.e. 19.20 = $19.20)") : alert("That's great! That stuff is expensive!");
 
-//Validate ternary result.
+
+//cast beverageCost to number.
 beverageCost = Number(beverageCost);
+//Validate ternary result.
 if(isNaN(beverageCost)){
     beverageCost = 0;
 }
@@ -111,7 +127,9 @@ tipCost = (totalCost * .15);
 fullPrice = (totalCost + tipCost);
 
 //Output results.
-
+//Output total cost without tip.
 console.log("The total cost of the meal is $" + totalCost + ".");
+//Output tip cost.
 console.log("A 15% tip would be $" + tipCost + ".");
+//Output total cost with tip.
 console.log("The full cost of the meal, with tip, is $" + fullPrice + ".");
