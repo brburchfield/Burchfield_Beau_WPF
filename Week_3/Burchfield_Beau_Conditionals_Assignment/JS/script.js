@@ -133,3 +133,17 @@ console.log("The total cost of the meal is $" + totalCost + ".");
 console.log("A 15% tip would be $" + tipCost + ".");
 //Output total cost with tip.
 console.log("The full cost of the meal, with tip, is $" + fullPrice + ".");
+
+/*
+Mr. Lewis,
+
+This is the section where I'm to add records of tests. All of the simple tests worked exactly as they should; however,
+ when I input many numbers with high cent value to costs, a weird anomaly happens. Even though all other results are valid,
+when adding large cent values, there's one or two 100,000ths of a cent added to the result. Looked and looked in the
+code. Can't find anything that would cause this. Additionally, Googled for the answer, and found nothing. I wonder what
+it is? Did I just miss something? If there's something obvious that's making this happen, I'd love to know it, after I
+get finished facepalming. Thanks!
+
+Kindest Regards,
+Beau Burchfield
+ */
