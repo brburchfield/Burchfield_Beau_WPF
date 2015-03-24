@@ -46,6 +46,8 @@ function beeStings(w) {
 
 //Return:
 //Number of Bee stings
+    return bees;
+}
 
 //Call function
 
