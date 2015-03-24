@@ -36,6 +36,8 @@ console.log("The circumference of the circle is " + circleCircumference + ".");
 
 //Given:
 //Victim’s weight (in pounds)
+var victimWeight = 180;
+
 
 //Parameter(s) for function:
 //Victim’s weight (in pounds)
@@ -43,14 +45,9 @@ console.log("The circumference of the circle is " + circleCircumference + ".");
 //Return:
 //Number of Bee stings
 
+//Call function
+
+
 //Result to print to the console:
-//“It takes X bee stings to kill this animal.
-
-var total = calcArea(30, 20);
-
-function calcArea(w, h){
-    var area = w * h;
-    return area;
-}
-console.log(total);
+//“It takes X bee stings to kill this animal."
 
