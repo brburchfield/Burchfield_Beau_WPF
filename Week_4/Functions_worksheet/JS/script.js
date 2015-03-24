@@ -10,22 +10,20 @@ Functions Worksheet
 
 //Parameter(s) for function:
 //Radius of the circle
+var radius = 15;
 
-function calcCircle(r) {
+function calcCircle(r){
     var circumference = (2 * r) * 3.14;
-
 //Return:
 //Circumference of the circle
-
     return circumference;
 }
-//Call function
 
-var circleCircumference = calcCircle(15);
+//Call function
+var circleCircumference = calcCircle(radius);
 
 //Result to print to the console:
 //“The circumference of the circle is X”;
-
 console.log("The circumference of the circle is " + circleCircumference + ".");
 
 
