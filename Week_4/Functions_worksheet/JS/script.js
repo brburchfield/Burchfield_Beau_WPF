@@ -41,6 +41,8 @@ var victimWeight = 180;
 
 //Parameter(s) for function:
 //Victim’s weight (in pounds)
+function beeStings(w) {
+    var bees = w * 8.666666667;
 
 //Return:
 //Number of Bee stings
