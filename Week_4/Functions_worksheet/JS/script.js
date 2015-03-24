@@ -50,7 +50,7 @@ function beeStings(w) {
 }
 
 //Call function
-
+var beesNeeded = beeStings(victimWeight);
 
 //Result to print to the console:
 //“It takes X bee stings to kill this animal."
