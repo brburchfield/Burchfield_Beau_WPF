@@ -26,6 +26,8 @@ var circleCircumference = calcCircle(15);
 //Result to print to the console:
 //“The circumference of the circle is X”;
 
+console.log("The circumference of the circle is " + circleCircumference + ".");
+
 
 
 
