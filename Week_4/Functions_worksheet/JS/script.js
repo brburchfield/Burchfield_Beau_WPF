@@ -54,4 +54,4 @@ var beesNeeded = beeStings(victimWeight);
 
 //Result to print to the console:
 //“It takes X bee stings to kill this animal."
-
+console.log("It takes " + beesNeeded + " bee stings to kill this animal.");
