@@ -38,3 +38,13 @@ if(whichLotto === "PB"){
     console.log("The numbers are: " +pbRandom[0]+", "+pbRandom[1]+", "+pbRandom[2]+", "+pbRandom[3]+", "+pbRandom[4]+", " +
     "and the Powerball is " + pbRandom[5]+".");
 }
+//If user selected the Florida lottery
+if(whichLotto === "FL"){
+    //Output Florida lotto confirmation
+    console.log("OK. You want the Florida lottery numbers.");
+    //Call Florida function; assign result to variable
+    flRandom = floridaNum(53, 1, 6);
+    //Output result of function
+    console.log("The numbers are: " + flRandom[0] + ", " + flRandom[1] + ", " + flRandom[2] + ", " + flRandom[3] + ", "
+    + flRandom[4] + ", and " + flRandom[5] + ".");
+}
