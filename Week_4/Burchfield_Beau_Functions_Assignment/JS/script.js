@@ -20,6 +20,12 @@ while(whichLotto == null || (whichLotto !== "PB" && whichLotto !== "FL")) {
     whichLotto = whichLotto.toUpperCase();
 }
 
+//variable for result of Powerball function
+var pbRandom;
+
+//variable for result of Florida lottery function
+var flRandom;
+
 
 console.log(whichLotto);
 
