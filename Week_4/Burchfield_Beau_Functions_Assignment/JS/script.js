@@ -149,3 +149,8 @@ if(whichLotto === "FL"){
     console.log("The numbers are: " + flRandom[0] + ", " + flRandom[1] + ", " + flRandom[2] + ", " + flRandom[3] + ", "
     + flRandom[4] + ", and " + flRandom[5] + ".");
 }
+
+//Test Results
+/* Powerball numbers: 51, 55, 6, 20, 46, with PB 5
+ FL lottery numbers:  35, 5, 46, 18, 8, and 14 */
+
