@@ -41,6 +41,37 @@ function powerballNum(max, max2, min, num){
 
         pbArray[p] = pbRanNum;
     }
+    //The following is my code to ensure that the first five numbers of the Powerball are unique
+
+    //As long as the first number of the array matches any other number, it will be assigned another random value
+    while(pbArray[0] === pbArray[1] || pbArray[0] === pbArray[2] || pbArray[0] === pbArray[3] || pbArray[0] === pbArray[4]){
+        pbArray[0] = Math.round(Math.random() * (max-min) + min);
+    }
+
+    //As long as the second number of the array matches any other number, it will be assigned another random value
+    while(pbArray[1] === pbArray[0] || pbArray[1] === pbArray[2] || pbArray[1] === pbArray[3] || pbArray[1] === pbArray[4]){
+        pbArray[1] = Math.round(Math.random() * (max-min) + min);
+    }
+
+    //As long as the third number of the array matches any other number, it will be assigned another random value
+    while(pbArray[2] === pbArray[0] || pbArray[2] === pbArray[1] || pbArray[2] === pbArray[3] || pbArray[2] === pbArray[4]){
+        pbArray[2] = Math.round(Math.random() * (max-min) + min);
+    }
+
+    //As long as the fourth number of the array matches any other number, it will be assigned another random value
+    while(pbArray[3] === pbArray[0] || pbArray[3] === pbArray[1] || pbArray[3] === pbArray[2] || pbArray[3] === pbArray[4]){
+        pbArray[3] = Math.round(Math.random() * (max-min) + min);
+    }
+    //Adding this code for the fifth is redundant, as no other numbers equal the fifth, now
+
+    //This is the final, Powerball number
+    pbRanNum = Math.round(Math.random() * (max2 - min) + min);
+    //This adds the final number to the array
+    pbArray[p] = pbRanNum;
+
+    return pbArray;
+
+}
 
 
 
@@ -57,6 +88,43 @@ function powerballNum(max, max2, min, num){
 
             flArray[f] = flRanNum;
         }
+        //The following is my code to ensure that the six numbers of the Florida lottery are unique
+
+        //As long as the first number of the array matches any other number, it will be assigned another random value
+        while(flArray[0] === flArray[1] || flArray[0] === flArray[2] || flArray[0] === flArray[3] || flArray[0] === flArray[4] || flArray[0] === flArray[5]) {
+            flArray[0] = Math.round(Math.random() * (max - min) + min);
+        }
+
+        //As long as the second number of the array matches any other number, it will be assigned another random value
+        while(flArray[1] === flArray[0] || flArray[1] === flArray[2] || flArray[1] === flArray[3] || flArray[1] === flArray[4] || flArray[1] === flArray[5]) {
+            flArray[1] = Math.round(Math.random() * (max - min) + min);
+        }
+
+        //As long as the third number of the array matches any other number, it will be assigned another random value
+        while(flArray[2] === flArray[0] || flArray[2] === flArray[1] || flArray[2] === flArray[3] || flArray[2] === flArray[4] || flArray[2] === flArray[5]) {
+            flArray[2] = Math.round(Math.random() * (max - min) + min);
+        }
+
+        //As long as the forth number of the array matches any other number, it will be assigned another random value
+        while(flArray[3] === flArray[0] || flArray[3] === flArray[1] || flArray[3] === flArray[2] || flArray[3] === flArray[4] || flArray[3] === flArray[5]) {
+            flArray[3] = Math.round(Math.random() * (max - min) + min);
+        }
+
+        //As long as the fifth number of the array matches any other number, it will be assigned another random value
+        while(flArray[4] === flArray[0] || flArray[4] === flArray[1] || flArray[4] === flArray[2] || flArray[4] === flArray[3] || flArray[4] === flArray[5]) {
+            flArray[4] = Math.round(Math.random() * (max - min) + min);
+        }
+        //Adding this code for the sixth is redundant, as no other numbers equal the sixth, now
+
+
+        return flArray;
+
+    }
+
+
+
+
+
 
 
 //TODO: Main Code
