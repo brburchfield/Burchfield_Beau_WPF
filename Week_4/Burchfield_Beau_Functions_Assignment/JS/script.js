@@ -22,3 +22,19 @@ while(whichLotto == null || (whichLotto !== "PB" && whichLotto !== "FL")) {
 
 
 console.log(whichLotto);
+
+//TODO: Functions
+
+
+//TODO: Main Code
+
+//If user selected the Powerball
+if(whichLotto === "PB"){
+    //Output Powerball confirmation
+    console.log("OK. You want the Powerball numbers.");
+    //Call Powerball function; assign result to variable
+    pbRandom = powerballNum(59, 35, 1, 5);
+    //Output result of function
+    console.log("The numbers are: " +pbRandom[0]+", "+pbRandom[1]+", "+pbRandom[2]+", "+pbRandom[3]+", "+pbRandom[4]+", " +
+    "and the Powerball is " + pbRandom[5]+".");
+}
