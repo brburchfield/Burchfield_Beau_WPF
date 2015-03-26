@@ -30,6 +30,33 @@ var flRandom;
 console.log(whichLotto);
 
 //TODO: Functions
+//Powerball function
+function powerballNum(max, max2, min, num){
+
+    var pbArray = [];
+
+    //Math.round(Math.random() = ( max - min ) + min)
+    for (var p = 0; p < num; p++) {
+        var pbRanNum = Math.round(Math.random() * (max - min) + min);
+
+        pbArray[p] = pbRanNum;
+    }
+
+
+
+
+
+    //Florida lottery function
+    function floridaNum(max, min, num){
+
+        var flArray = [];
+
+        //Math.round(Math.random() = ( max - min ) + min)
+        for (var f = 0; f < num; f++) {
+            var flRanNum = Math.round(Math.random() * (max - min) + min);
+
+            flArray[f] = flRanNum;
+        }
 
 
 //TODO: Main Code
