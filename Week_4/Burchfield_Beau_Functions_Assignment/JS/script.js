@@ -132,8 +132,6 @@ function powerballNum(max, max2, min, num){
 
 //If user selected the Powerball
 if(whichLotto === "PB"){
-    //Output Powerball confirmation
-    console.log("OK. You want the Powerball numbers.");
     //Call Powerball function; assign result to variable
     pbRandom = powerballNum(59, 35, 1, 5);
     //Output result of function
@@ -142,8 +140,6 @@ if(whichLotto === "PB"){
 }
 //If user selected the Florida lottery
 if(whichLotto === "FL"){
-    //Output Florida lotto confirmation
-    console.log("OK. You want the Florida lottery numbers.");
     //Call Florida function; assign result to variable
     flRandom = floridaNum(53, 1, 6);
     //Output result of function
