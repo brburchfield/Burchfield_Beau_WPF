@@ -7,29 +7,28 @@
 
 //TODO: Variables
 
-//Prompt for lotto type (spacing for aesthetics).
-var whichLotto = prompt("Do you want numbers for the Powerball or the Florida lottery?\n\n " +
-"        Type PB for Powerball, and FL for Florida lottery.");
-
-//Make user input uppercase to match variable requirements
-whichLotto = whichLotto.toUpperCase();
-
-//Validation. If nothing is entered,
-while(whichLotto == null || (whichLotto !== "PB" && whichLotto !== "FL")) {
-    whichLotto = prompt("You must enter either PB or FL.");
-    whichLotto = whichLotto.toUpperCase();
-}
-
 //variable for result of Powerball function
 var pbRandom;
 
 //variable for result of Florida lottery function
 var flRandom;
 
+//Prompt for lotto type (spacing for aesthetics).
+var whichLotto = prompt("Do you want numbers for the Powerball or the Florida lottery?\n\n " +
+"        Type PB for Powerball, and FL for Florida lottery.");
 
-console.log(whichLotto);
+//Change user input to uppercase to match variable requirements
+whichLotto = whichLotto.toUpperCase();
+
+//Validation. If nothing is entered, this will re-prompt the user.
+while(whichLotto === "" || (whichLotto !== "PB" && whichLotto !== "FL")) {
+    whichLotto = prompt("You must enter either PB or FL.");
+    whichLotto = whichLotto.toUpperCase();
+}
+
 
 //TODO: Functions
+
 //Powerball function
 function powerballNum(max, max2, min, num){
 
@@ -39,6 +38,7 @@ function powerballNum(max, max2, min, num){
     for (var p = 0; p < num; p++) {
         var pbRanNum = Math.round(Math.random() * (max - min) + min);
 
+        //Assign result of math object to array
         pbArray[p] = pbRanNum;
     }
     //The following is my code to ensure that the first five numbers of the Powerball are unique
@@ -86,6 +86,7 @@ function powerballNum(max, max2, min, num){
         for (var f = 0; f < num; f++) {
             var flRanNum = Math.round(Math.random() * (max - min) + min);
 
+            //Assign result of math object to array
             flArray[f] = flRanNum;
         }
         //The following is my code to ensure that the six numbers of the Florida lottery are unique
