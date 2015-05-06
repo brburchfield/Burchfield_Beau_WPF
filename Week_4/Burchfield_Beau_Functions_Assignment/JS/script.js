@@ -74,8 +74,8 @@ function powerballNum(max, max2, min, num){
 }
 
 
-
-
+testarray[car, truck, boat, train]
+8
 
     //Florida lottery function
     function floridaNum(max, min, num){
